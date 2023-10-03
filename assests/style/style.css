@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   font-size: 20px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 /*Header*/
 
@@ -17,7 +17,6 @@ header,
 h1 {
   align-items: center;
   color: #bf5b04;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 nav {
@@ -41,7 +40,6 @@ a {
   display: flex;
   justify-content: center;
   list-style-type: none;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-decoration: none;
   font-size: 25px;
 }
@@ -66,7 +64,7 @@ h1 {
   margin-right: auto;
 }
 
-.myparagraph {
+.my-paragraph {
   padding-top: 10px;
   padding-bottom: 10px;
   margin: 2rem 50px;
@@ -78,7 +76,7 @@ h2 {
   width: 80%;
   text-align: center;
 }
-
+/*line for between main and footer*/
 hr {
   margin-top: 23px;
   margin-bottom: 23px;
@@ -98,5 +96,31 @@ footer {
   align-items: center;
 }
 
-/* @media screen() {
-} */
+/* Vos css pour une largeur supérieure ou égale à 1024px (pc desktop)*/
+@media screen and (min-width: 1024px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 auto;
+  }
+  .img-logo {
+    padding: 20px;
+  }
+  h1 {
+    padding: 27px;
+  }
+
+  article {
+    width: 40%;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+@media screen and (min-width:820px) {
+    
+}
