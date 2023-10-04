@@ -11,6 +11,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-bottom: 2rem;
 }
 
 header,
@@ -43,44 +44,35 @@ a {
   text-decoration: none;
   font-size: 25px;
 }
+.logo {
+  text-align: center;
+  align-items: center;
+}
 
 /*main*/
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* border: 1px solid blue; */
 }
 
 h1 {
-  display: block;
+  /* display: block; */
   margin-bottom: 30px;
 }
 
 .img-bg {
-  display: block;
+  /* display: block; */
   width: 80%;
   max-width: 540px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.my-paragraph {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin: 2rem 50px;
-}
-
 h2 {
-  margin: 23px;
-  display: block;
-  width: 80%;
   text-align: center;
-}
-/*line for between main and footer*/
-hr {
-  margin-top: 23px;
   margin-bottom: 23px;
-  border: 1px solid black;
 }
 
 /*footer*/
@@ -96,30 +88,55 @@ footer {
   align-items: center;
 }
 
-/* Vos css pour une largeur supérieure ou égale à 1024px (pc desktop)*/
-/* @media screen and (min-width: 1024px) {
+/* ------------(tablet)-------------------*/
+@media screen and (min-width: 768px) {
   header {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0 auto;
+    flex-direction: column;
   }
-  .img-logo {
-    padding: 20px;
-  }
-  h1 {
-    padding: 27px;
-  }
-
-  article {
-    width: 40%;
+  .logo {
+    text-align: center;
+    align-items: center;
   }
 
   nav ul {
     display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
   }
+  ul li {
+    white-space: nowrap;
+  }
+  section {
+    width: 100%;
+    border-top: dotted 1px;
+    border-bottom: solid 1px;
+  }
+
+  .galarie {
+    width: 50%;
+  }
+  article  {
+    width: 77%;
+  }
 }
-@media screen and (min-width: 820px) {
-} */
+/* -----------------(pc)---------------*/
+@media screen and (min-width: 1024px) {
+  /* main*/
+  header {
+    display: flex;
+    flex-direction: row;
+    padding: 0 auto;
+  }
+
+  h1 {
+    margin: 2rem;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  article {
+    width: 40%;
+  }
+}
