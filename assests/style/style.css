@@ -87,7 +87,7 @@ hr {
 
 footer {
   margin-top: 10px;
-  margin-bottom: 10spx;
+  margin-bottom: 10px;
   align-items: center;
   height: 100px;
   display: flex;
@@ -97,7 +97,7 @@ footer {
 }
 
 /* Vos css pour une largeur supérieure ou égale à 1024px (pc desktop)*/
-@media screen and (min-width: 1024px) {
+/* @media screen and (min-width: 1024px) {
   header {
     display: flex;
     flex-direction: row;
@@ -121,6 +121,5 @@ footer {
     justify-content: space-evenly;
   }
 }
-@media screen and (min-width:820px) {
-    
-}
+@media screen and (min-width: 820px) {
+} */
