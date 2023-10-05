@@ -130,7 +130,7 @@ footer {
   section {
     display: flex;
     width: 100%;
-    border-top: 1px solid #f2f2f2;
+    /* border-top: 1px solid #f2f2f2; */
     justify-content: space-between;
     padding: 1.3rem;
   }
@@ -204,7 +204,6 @@ footer {
     padding-bottom: 2rem;
   }
   .galarie {
-    width: 90%;
-    margin-left: 2rem;
+    width: 77%;
   }
 }
