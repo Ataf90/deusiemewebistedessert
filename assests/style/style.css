@@ -3,7 +3,12 @@
   margin: 0;
   padding: 0;
   font-size: 20px;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+body {
+  background-color: gray;
+}
+.container {
+  background-color: #fff;
 }
 /*Header*/
 
@@ -12,12 +17,14 @@ header {
   flex-direction: column;
   justify-content: center;
   padding-bottom: 2rem;
+  padding-top: 1rem;
 }
 
-header,
 h1 {
   align-items: center;
   color: #bf5b04;
+  font-family: "Lemonada", cursive;
+  font-size: 1.4rem;
 }
 
 nav {
@@ -30,8 +37,8 @@ ul {
 
 ul li {
   background-color: #f2f2f2;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  text-transform: uppercase;
+  padding: 1rem 0;
   margin: 2px;
 }
 
@@ -42,7 +49,7 @@ a {
   justify-content: center;
   list-style-type: none;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 16px;
 }
 .logo {
   text-align: center;
@@ -54,42 +61,54 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* border: 1px solid blue; */
 }
 
 h1 {
-  /* display: block; */
-  margin-bottom: 30px;
+  margin: 2rem 0;
+  font-size: 1.3rem;
+  color: #bf5b04;
 }
 
 .img-bg {
   /* display: block; */
-  width: 80%;
-  max-width: 540px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+}
+article {
+  padding: 1rem;
 }
 
 h2 {
   text-align: center;
+  margin-bottom: 3rem;
+}
+article p {
+  margin-top: 1rem;
+}
+section {
+  display: none;
+}
+.list-deserts {
+  margin-bottom: 23px;
+}
+.galarie {
   margin-bottom: 23px;
 }
 
 /*footer*/
 
 footer {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  align-items: center;
-  height: 100px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  border-top: 1px #f2f2f2;
+  padding: 2rem;
+  text-align: center;
 }
 
 /* ------------(tablet)-------------------*/
 @media screen and (min-width: 768px) {
+  .container {
+    width: 95%;
+    margin: 0 auto;
+  }
+
   header {
     display: flex;
     flex-direction: column;
@@ -104,39 +123,88 @@ footer {
     justify-content: space-evenly;
   }
   ul li {
-    white-space: nowrap;
+    display: block;
+    width: 33%;
+    padding: 1rem 0;
   }
   section {
+    display: flex;
     width: 100%;
-    border-top: dotted 1px;
-    border-bottom: solid 1px;
+    border-top: 1px solid #f2f2f2;
+    justify-content: space-between;
+    padding: 1.3rem;
+  }
+  .list-deserts h3 {
+    margin-left: 3.3rem;
+    border-bottom: 1px solid #f2f2f2;
+  }
+  .list-deserts ol {
+    margin-left: 3.2rem;
+  }
+
+  section h3 {
+    border-bottom: 1px solid #f2f2f2;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
   }
 
   .galarie {
-    width: 50%;
-  }
-  article  {
-    width: 77%;
+    width: 47%;
   }
 }
 /* -----------------(pc)---------------*/
 @media screen and (min-width: 1024px) {
+  .container {
+    width: 80%;
+  }
   /* main*/
+
   header {
     display: flex;
     flex-direction: row;
-    padding: 0 auto;
+    align-items: center;
+    padding: 0;
+    border-bottom: 1px solid #f2f2f2;
+  }
+  .logo {
+    display: flex;
+    flex-direction: row;
+    padding: 0.5rem;
+    width: 50%;
   }
 
   h1 {
     margin: 2rem;
+    white-space: nowrap;
   }
-  nav ul {
+  nav ul li {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    background-color: white;
+  }
+  main {
+    display: flex;
+    flex-direction: row;
   }
   article {
-    width: 40%;
+    width: 60%;
+  }
+  section {
+    display: inline;
+    width: 30%;
+    height: 800px; /* donne une hauteur présice/*
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    padding: 0;
+    margin: 0;
+  }
+  .list-deserts {
+    padding-bottom: 2rem;
+  }
+  .galarie {
+    width: 90%;
+    margin-left: 2rem;
   }
 }
